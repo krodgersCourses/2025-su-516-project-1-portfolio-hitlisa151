@@ -1,6 +1,69 @@
-/* A handy list of color names: https://www.w3schools.com/colors/colors_names.asp */
 
-body {
-    background-color:rgb(121, 176, 224)
+#About_Me body,
+#Hobbies body,
+#Education body{
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+#About_Me header,
+#Hobbies header,
+#Education header {
+  background-color: #53bdc7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+#About_Me nav,
+#Hobbies nav,
+#Education nav {
+  float: left;
+  width: 30%;
+  background: #ccc;
+  padding: 20px;
+}
+
+#About_Me nav, #Hobbies nav, #Education nav, #About_Me article,
+#Hobbies article, #Education article {
+box-sizing: border-box;
+padding: 20px;
+}
+
+#About_Me nav, #Hobbies nav, #Eduation nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+}
+
+#About_Me article, #Hobbies article, #Education article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+#About_Me section::after, #Hobbies section::after, 
+#Education section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#About_Me footer, #Hobbies footer, #Education footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+ @media (max-width: 600px) {
+ #About_Me nav, #About_Me article, #Hobbies nav, #Hobbies article, 
+ #Education nav, #Education article {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+}
+
 
